@@ -1,3 +1,6 @@
+const navConf = require('./config/nav');
+const sidebarConf = require('./config/sidebar');
+
 module.exports = {
   "title": "Moking的个人网站",
   "description": "认真生活",
@@ -20,40 +23,8 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
-    "nav": [
-      {
-        "text": "首页",
-        "link": "/",
-        "icon": "reco-home"
-      },
-      {
-        "text": "时间轴",
-        "link": "/timeline/",
-        "icon": "reco-date"
-      },
-      {
-        "text": "文档",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
-      },
-      {
-        "text": "Git",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/Moking1997",
-            "icon": "reco-github"
-          }
-        ]
-      }
-    ],
-    "sidebar": 'auto',
+    "nav": navConf,
+    "sidebar": sidebarConf,
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -79,6 +50,7 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
+    "logo": "/avatar.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
@@ -87,6 +59,10 @@ module.exports = {
     "record": "浙ICP备19042845号-2",
     'recordLink': 'http://www.beian.miit.gov.cn/',
     "startYear": "2019",
+    valineConfig: {
+      appId: 'w0gnBUsPC2FiGPLXraNyXMaG-gzGzoHsz',
+      appKey: '9GRIruOGQo7fbShlvGowR3p3', // your appKey
+    }
   },
   'locales': {
     '/': {
@@ -94,6 +70,6 @@ module.exports = {
     }
   },
   "markdown": {
-    "lineNumbers": true
+    "lineNumbers": false
   }
 }

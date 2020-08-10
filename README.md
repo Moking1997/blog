@@ -11,6 +11,7 @@ tagline: 认真生活
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+bgImage: '/bg.svg'
 bgImageStyle: {
   height: '450px'
 }

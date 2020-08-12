@@ -20,6 +20,11 @@ module.exports = [
         ]
     },
     {
+        "text": "作品",
+        "link": "/show/",
+        "icon": "reco-document"
+    },
+    {
         "text": "Git",
         "icon": "reco-message",
         "items": [

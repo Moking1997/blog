@@ -2,7 +2,7 @@
   <ul class="show">
     <li class="show-item" v-for="item in items" :key="item.message">
       <div class="show-item-front">
-        <img class="show-item-img" src="../public/avatar.jpg" alt />
+        <img class="show-item-img" src="../public/bg.svg" alt />
       </div>
       <div class="show-item-back">
         <div class="show-item-back-title">Canvas</div>

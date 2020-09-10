@@ -1,18 +1,13 @@
 <template>
   <ul class="show">
-    <li class="show-item" v-for="item in items" :key="item.message">
+    <li class="show-item" v-for="item in items" :key="item.name">
       <div class="show-item-front">
-        <img class="show-item-img" src="../public/bg.svg" alt />
+        <img class="show-item-img" src="/src/firework/firework.gif" alt />
       </div>
       <div class="show-item-back">
         <div class="show-item-back-title">Canvas</div>
-        <div class="show-item-back-text">
-          首先我们需要明白以下几件事情：
-          JS分为同步任务和异步任务
-          同步任务都在主线程上执行，形成一个执行栈
-          主线程之外，事件触发线程管理着一个任务队列，只要异步任务有了运行结果，就在任务队列之中放置一个事件。
-        </div>
-        <a href class="show-item-back-url">查看</a>
+        <div class="show-item-back-text">烟花</div>
+        <a :href="item.url" class="show-item-back-url">查看</a>
       </div>
     </li>
   </ul>
@@ -22,7 +17,7 @@
 export default {
   data() {
     return {
-      items: [{ message: "Foo" }, { message: "Bar" }, { message: "Too" }],
+      items: [{ name: "fireWork", url: "/src/firework/firework.html" }],
     };
   },
 };
@@ -59,9 +54,11 @@ li {
   backface-visibility: hidden;
 }
 .show-item-back {
+  width: 100%;
   backface-visibility: hidden;
   position: absolute;
   transform: rotateY(180deg);
+  text-align: center;
 }
 .show-item-img {
   width: 100%;

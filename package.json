@@ -1,17 +1,19 @@
 {
-  "name": "blog",
+  "name": "vitePress",
   "version": "1.0.0",
-  "author": "reco_luan",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "npx vitepress build",
+    "dev": "npx vitepress"
   },
   "devDependencies": {
-    "vuepress": "1.5.3",
-    "vuepress-theme-reco": "1.5.5"
+    "globby": "^11.0.1",
+    "gray-matter": "^4.0.2",
+    "mz": "^2.7.0",
+    "vitepress": "^0.7.2"
   },
   "dependencies": {
-    "vue-class-component": "^7.2.3"
-  },
-  "description": "Moking1997 blog"
+    "gitalk": "^1.7.0"
+  }
 }

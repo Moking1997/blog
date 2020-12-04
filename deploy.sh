@@ -3,17 +3,11 @@
 # 确保脚本抛出遇到的错误
 set -e
  
-git init
-git add -A
-git commit -m 'git-deploy'
-
-git push -f https://github.com/Moking1997/blog.git master
-
 # 生成静态文件 
-yarn build
+# yarn build
  
 # 进入生成的文件夹
-cd public
+cd .vitepress/dist 
  
 git init
 git add -A

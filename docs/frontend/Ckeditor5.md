@@ -1,6 +1,6 @@
 ---
 date: 2020-12-04
-title: 「CKEditor5」富文本编辑器定制
+title: CKEditor5富文本编辑器定制
 tags:
   - 前端
 describe: CKEditor5可以与 Angular，React 和 Vue.js 集成,也可以和 Electron 和移动设备（Android，iOS）兼容。自定义自己所需的编辑功能,如自动格式化,上传适配器,导出 PDF 等功能

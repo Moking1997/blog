@@ -1,6 +1,6 @@
 ---
 date: 2020-12-04
-title: 「Strapi」无头CMS，快速构建API
+title: Strapi无头CMS，快速构建API
 tags:
   - 前端
 describe: Strapi是一个免费的开源无头 CMS，可以快速构建自己所需的 API。
